@@ -25,10 +25,10 @@ sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generat
 #sed -i 's/116736k/240128k/g' target/linux/mediatek/image/mt7981.mk
 
 #删除冲突的软件包
-rm -rf ./package/istore
-rm -rf ./feeds/kenzo/luci-app-quickstart
-rm -rf ./feeds/kenzo/luci-app-store
-rm -rf ./feeds/kenzo/luci-lib-taskd
+#rm -rf ./package/istore
+#rm -rf ./feeds/kenzo/luci-app-quickstart
+#rm -rf ./feeds/kenzo/luci-app-store
+#rm -rf ./feeds/kenzo/luci-lib-taskd
 
 #一键命令(防止插件冲突，删除重复)
 sed -i '1i src-git kenzo https://github.com/kenzok8/openwrt-packages' feeds.conf.default
